@@ -1,0 +1,24 @@
+{
+  "name": "prettier-eslint-import-empty-line-removal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Amos Yuen <amosyuen@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src/example.js",
+    "lint:fix": "yarn lint --fix",
+    "lint:prettier": "prettier-eslint --list-different --write src/example.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "eslint": "4.0.0",
+    "eslint-import-resolver-alias": "^1.1.0",
+    "eslint-import-resolver-node": "^0.3.2",
+    "eslint-plugin-import": "^2.13.0",
+    "prettier-eslint-cli": "^4.7.1"
+  },
+  "resolution": {
+    "**/eslint": "4.0.0",
+    "**/prettier-eslint": "8.8.2"
+  }
+}
