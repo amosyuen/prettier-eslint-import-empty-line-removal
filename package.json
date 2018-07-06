@@ -6,8 +6,10 @@
   "license": "MIT",
   "scripts": {
     "eslint": "eslint src/example.js",
-    "eslint-fix": "yarn lint --fix",
+    "eslint-fix": "yarn eslint --fix",
+    "eslint-fix-eslintrc": "yarn eslint --config ./.eslintrc.js --no-eslintrc --fix",
     "eslint-fix-cli": "node run-eslint-cli",
+    "eslint-fix-cli-eslintrc": "node run-eslint-cli-eslintrc",
     "eslint-fix-linter": "node run-eslint-linter",
     "prettier-fix": "prettier-eslint --list-different --write src/example.js"
   },
